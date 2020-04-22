@@ -1,14 +1,14 @@
 import numpy as np
 import cv2
 import pafy
-
+"""
 url = 'https://www.youtube.com/watch?v=c07IsbSNqfI&feature=youtu.be%27'
 vpafy = pafy.new(url)
 print (vpafy.title)
 print (vpafy.rating)
 print (vpafy.viewcount)
 play = vpafy.getbest(preftype="mp4")
-
+"""
 cap = cv2.VideoCapture(play.url)
 cap.set(3,480)
 cap.set(4,640)
